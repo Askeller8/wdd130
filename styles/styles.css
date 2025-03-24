@@ -4,6 +4,11 @@
     --main-link-color: #0000ff;
     --main-link-hover-color: #ff0000;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -17,6 +22,7 @@ h1 {
     color: darkblue;
 }
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -37,13 +43,31 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
+}
+aside h2 {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    background-color: #rgba(0, 0, 0, 0.5);
+    font: 1.4rem Arial, sans-serif;
+    padding: 0 1rem;
+    z-index: 1; /* Added to ensure the h2 element is above other content */
 }
 aside img {
     width: 200px;
     height: auto;
 }
-footer{
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0/10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
