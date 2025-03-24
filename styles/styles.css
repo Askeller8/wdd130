@@ -1,3 +1,9 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333;
+    --main-link-color: #0000ff;
+    --main-link-hover-color: #ff0000;
+}
 nav {
     background-color: darkblue;
     padding: 10px;
