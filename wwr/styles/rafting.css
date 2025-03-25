@@ -1,0 +1,120 @@
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+</style> */
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Removed the invalid angle brackets */
+    font-style: normal;
+    font-variation-settings: "wght" 400; /* Corrected the variation setting to use "wght" for weight */
+  }
+  :root {
+    --primary-color: #05668D;
+    --secondary-color: #028090;
+    --tertiary-color: #00A896;
+    --quaternary-color: #02C39A;
+    --quinary-color: #F0F3BD;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif; /* Fixed the incorrect syntax */
+    font-size: 16px;
+    max-width: 100%;
+
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    display: inline-block; /* Corrected 'inline-block' to be a valid property-value pair */
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+li a{
+    display: inline-block;
+    color: white !important;
+    padding: auto;
+}
+body {
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Boldonse", sans-serif; /* Fixed the incorrect syntax */
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+footer nav a {
+    text-decoration: none;
+}
+.hero {
+    position: relative; /* Establishes a positioning context for child elements */
+}
+
+.hero img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%; /* Adjusts the h1 to be near the top of the image */
+  left: 50%; /* Centers the h1 horizontally */
+  transform: translateX(-50%); /* Only center horizontally */
+  color: var(--quinary-color);
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+  display: flex; /* Enables flexbox for horizontal alignment */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  background-color: rgba(2, 128, 144, 0.5); /* Secondary color with 80% opacity */
+  color: var(--quinary-color);
+  padding: 20px;
+  margin: 0; /* Removed margin to avoid shifting */
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  font-size: 1.5em;
+left: 30px;
+  position: absolute; /* Positions the article relative to the .hero container */
+    transform: translate(0, -120%); /* Adjusts position to center the article */
+  z-index: 1; /* Ensures the article is above the image */
+}
+
+.hero article img {
+  float: right;
+  margin: 0 10px; /* Adds spacing between items */
+  width: 25%;
+  height: auto;
+}
