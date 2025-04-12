@@ -34,27 +34,92 @@
 header {
     background-color: var(--primary-color);
     color: var(--quinary-color);
-    text-align: center;
     padding: 20px;
+   display: grid; 
+   grid-template-columns: 1fr 2fr;
+   grid-gap: 10px;
+    align-items: center; /* Center items vertically */
+    justify-items: center; /* Center items horizontally */
+   
 }
 nav {
-    display: inline-block; /* Corrected 'inline-block' to be a valid property-value pair */
     background-color: var(--primary-color);
     padding: 10px;
     text-align: center;
     text-decoration: none;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items horizontally */
+}
 li {
-    display: inline-block;
+    text-decoration: none;
     margin: 0 10px;
 }
 li a{
-    display: inline-block;
     color: white !important;
+    text-decoration: none;
 }
+
 body {
     background-color: var(--quinary-color);
     color: var(--primary-color);
+}
+section.History {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    justify-content: space-around; /* Distributes items evenly with space between them */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds spacing between flex items */
+    padding: 20px; /* Adds padding around the section */
+    width: 100%; /* Ensures the section takes full width */
+
+}
+
+.History h2 {
+    order: 0; 
+    flex: 1; /* Allows the heading to take up available space */
+    text-align: center; /* Centers the heading text */
+    margin: 0; /* Removes default margin */
+    padding: 50px; /* Adds padding around the heading */
+    font-size: 4em; /* Increases the font size of the h2 */
+}
+
+.History h2 img {
+    width: 1200px; /* Enlarges the image */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the image behaves as a block element */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.History p1 {
+    order: -1;
+    flex: 1; /* Allows the paragraph to take up available space */
+    text-align: center; /* Centers the paragraph text */
+    margin: 0; /* Removes default margin */
+    padding: 50px; /* Adds padding around the paragraph */
+    font-size: 1.5em; /* Increases the font size of the paragraph */
+    line-height: 1.5; /* Increases line height for better readability */
+    background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
+    border-radius: 10px; /* Adds rounded corners to the paragraph */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.History p2 {
+    order: 1;
+    flex: 1; /* Allows the paragraph to take up available space */
+    text-align: center; /* Centers the paragraph text */
+    margin: 0; /* Removes default margin */
+    padding: 50px; /* Adds padding around the paragraph */
+    font-size: 1.5em; /* Increases the font size of the paragraph */
+    line-height: 1.5; /* Increases line height for better readability */
+    background-color: #f0f8ff; 
+    border-radius: 10px; /* Adds rounded corners to the paragraph */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Boldonse", sans-serif; /* Fixed the incorrect syntax */
@@ -103,7 +168,6 @@ footer nav a {
   border-radius: 10px;
   text-align: center;
   width: 60%;
-  font-size: 1.5em;
 left: 30px;
   position: absolute; /* Positions the article relative to the .hero container */
     transform: translate(0, -120%); /* Adjusts position to center the article */
@@ -115,4 +179,40 @@ left: 30px;
   margin: 0 10px; /* Adds spacing between items */
   width: 25%;
   height: auto;
+}
+section.Mission {
+ display: grid; /* Enables grid layout for the section */
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+  grid-gap: 20px; /* Adds spacing between grid items */
+}
+.Mission h3 {
+  grid-column: span 5; /* Makes the heading span all columns */
+  text-align: center; /* Centers the heading text */
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color); /* Adds a border around the box */
+  background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  text-align: center; /* Centers the text inside the box */
+}
+.Mission figure {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color); /* Adds a border around the box */
+  background-color: #e6ffe6; /* Light green for a fresh and natural look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+footer {
+  display: grid; /* Enables grid layout for the footer */
+  grid-template-columns: 1fr 2fr; /* Creates 2 columns */
+  grid-gap: 20px; /* Adds spacing between grid items */
+  padding: 20px; /* Adds padding around the footer */
+  background-color: var(--primary-color); /* Sets the background color */
+  color: var(--quinary-color); /* Sets the text color */
+  text-align: center; /* Centers the text inside the footer */
+  font-size: 1.2em; /* Increases the font size */
+  font-weight: 400; /* Sets the font weight */
 }
