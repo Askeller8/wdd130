@@ -1,65 +1,67 @@
-/* <style>
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-</style> */
 
 .boldonse-regular {
     font-family: "Boldonse", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
-  .open-sans-regular {
+.open-sans-regular {
     font-family: "Open Sans", sans-serif;
-    font-weight: 400; /* Removed the invalid angle brackets */
+    font-weight: 400;
     font-style: normal;
-    font-variation-settings: "wght" 400; /* Corrected the variation setting to use "wght" for weight */
-  }
-  :root {
+    font-variation-settings: "wght" 400;
+}
+
+:root {
     --primary-color: #05668D;
     --secondary-color: #028090;
     --tertiary-color: #00A896;
     --quaternary-color: #02C39A;
     --quinary-color: #F0F3BD;
-  }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 15px;
-    font-family: "Open Sans", sans-serif; /* Fixed the incorrect syntax */
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     max-width: 100%;
-
 }
+
 header {
     background-color: var(--primary-color);
     color: var(--quinary-color);
     padding: 20px;
-   display: grid; 
-   grid-template-columns: 1fr 2fr;
-   grid-gap: 10px;
-    align-items: center; /* Center items vertically */
-    justify-items: center; /* Center items horizontally */
-   
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
+
 nav {
     background-color: var(--primary-color);
     padding: 10px;
     text-align: center;
     text-decoration: none;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center;
 }
+
 li {
     text-decoration: none;
     margin: 0 10px;
 }
-li a{
+
+li a {
     color: white !important;
     text-decoration: none;
 }
@@ -68,216 +70,562 @@ body {
     background-color: var(--quinary-color);
     color: var(--primary-color);
 }
-section.History {
-    display: flex; /* Enables flexbox for horizontal alignment */
-    justify-content: space-around; /* Distributes items evenly with space between them */
-    align-items: center; /* Aligns items vertically */
-    gap: 20px; /* Adds spacing between flex items */
-    padding: 20px; /* Adds padding around the section */
-    width: 100%; /* Ensures the section takes full width */
 
+section.History {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
 }
 
 .History h2 {
-    order: 0; 
-    flex: 1; /* Allows the heading to take up available space */
-    text-align: center; /* Centers the heading text */
-    margin: 0; /* Removes default margin */
-    padding: 50px; /* Adds padding around the heading */
-    font-size: 4em; /* Increases the font size of the h2 */
+    order: 0;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    font-size: 4em;
 }
 
 .History h2 img {
-    width: 1200px; /* Enlarges the image */
-    height: auto; /* Maintains aspect ratio */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Ensures the image behaves as a block element */
-    border-radius: 10px; /* Adds rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .History p1 {
     order: -1;
-    flex: 1; /* Allows the paragraph to take up available space */
-    text-align: center; /* Centers the paragraph text */
-    margin: 0; /* Removes default margin */
-    padding: 50px; /* Adds padding around the paragraph */
-    font-size: 1.5em; /* Increases the font size of the paragraph */
-    line-height: 1.5; /* Increases line height for better readability */
-    background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
-    border-radius: 10px; /* Adds rounded corners to the paragraph */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .History p2 {
     order: 1;
-    flex: 1; /* Allows the paragraph to take up available space */
-    text-align: center; /* Centers the paragraph text */
-    margin: 0; /* Removes default margin */
-    padding: 50px; /* Adds padding around the paragraph */
-    font-size: 1.5em; /* Increases the font size of the paragraph */
-    line-height: 1.5; /* Increases line height for better readability */
-    background-color: #f0f8ff; 
-    border-radius: 10px; /* Adds rounded corners to the paragraph */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Boldonse", sans-serif; /* Fixed the incorrect syntax */
+    font-family: "Boldonse", sans-serif;
     font-weight: 400;
     color: var(--secondary-color);
 }
+
 h1 {
     font-size: 2.5em;
 }
+
 h2 {
     font-size: 2em;
 }
+
 footer nav a {
     text-decoration: none;
 }
+
 .hero {
-    position: relative; /* Establishes a positioning context for child elements */
+    position: relative;
 }
 
-.hero img{
-  display: block;
-  width: 100%;
-  height: auto;
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 10%; /* Adjusts the h1 to be near the top of the image */
-  left: 50%; /* Centers the h1 horizontally */
-  transform: translateX(-50%); /* Only center horizontally */
-  color: var(--quinary-color);
-  font-size: 3em;
-  font-weight: 400;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--quinary-color);
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
-  display: flex; /* Enables flexbox for horizontal alignment */
-  justify-content: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
-  background-color: rgba(2, 128, 144, 0.5); /* Secondary color with 80% opacity */
-  color: var(--quinary-color);
-  padding: 20px;
-  margin: 0; /* Removed margin to avoid shifting */
-  border-radius: 10px;
-  text-align: center;
-  width: 60%;
-left: 30px;
-  position: absolute; /* Positions the article relative to the .hero container */
-    transform: translate(0, -120%); /* Adjusts position to center the article */
-  z-index: 1; /* Ensures the article is above the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 128, 144, 0.5);
+    color: var(--quinary-color);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    left: 30px;
+    position: absolute;
+    transform: translate(0, -120%);
+    z-index: 1;
 }
 
 .hero article img {
-  float: right;
-  margin: 0 10px; /* Adds spacing between items */
-  width: 25%;
-  height: auto;
+    float: right;
+    margin: 0 10px;
+    width: 25%;
+    height: auto;
 }
+
 section.Mission {
- display: grid; /* Enables grid layout for the section */
-  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
-  grid-gap: 20px; /* Adds spacing between grid items */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
 }
+
 .Mission h3 {
-  grid-column: span 5; /* Makes the heading span all columns */
-  text-align: center; /* Centers the heading text */
-  font-size: 1.5em;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid var(--secondary-color); /* Adds a border around the box */
-  background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-  text-align: center; /* Centers the text inside the box */
+    grid-column: span 5;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
+
 .Mission figure {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid var(--secondary-color); /* Adds a border around the box */
-  background-color: #e6ffe6; /* Light green for a fresh and natural look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: #e6ffe6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 footer {
-  display: grid; /* Enables grid layout for the footer */
-  grid-template-columns: 1fr 2fr; /* Creates 2 columns */
-  grid-gap: 20px; /* Adds spacing between grid items */
-  padding: 20px; /* Adds padding around the footer */
-  background-color: var(--primary-color); /* Sets the background color */
-  color: var(--quinary-color); /* Sets the text color */
-  text-align: center; /* Centers the text inside the footer */
-  font-size: 1.2em; /* Increases the font size */
-  font-weight: 400; /* Sets the font weight */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 div.CompanyInfo {
-  grid-column: 1; /* Places the company info in the first column */
-  text-align: center; /* Centers the text inside the company info box */
-  padding: 20px; /* Adds padding around the box */
-  background-color: #fefae0; /* Light blue for a calming and professional look */
-  color: #05668D; /* Darker text color for better contrast */
-  border-radius: 10px; /* Adds rounded corners to the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    grid-column: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #fefae0;
+    color: #05668D;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-div.EmployeeProfiles {
-  display: grid; /* Enables grid layout for the employee profiles */
-  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
-  grid-column: 2; /* Places the employee profiles in the second column */
-  text-align: center; /* Centers the text inside the employee profiles box */
-  padding: 20px; /* Adds padding around the box */
-  background-color: #fefae0; /* Light blue for a calming and professional look */
-  color: #05668D; /* Darker text color for better contrast */
-  border-radius: 10px; /* Adds rounded corners to the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-}
-div.EmployeeProfiles h2 {
-  grid-column: span 2; /* Makes the heading span both columns */
-  text-align: center; /* Centers the heading text */
-  font-size: 1.5em; /* Increases the font size of the heading */
-  padding: 10px; /* Adds padding around the heading */
-  margin: 10px; /* Adds margin around the heading */
-  border-radius: 10px; /* Adds rounded corners to the heading box */
-  background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
 
+div.EmployeeProfiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2;
+    text-align: center;
+    padding: 20px;
+    background-color: #fefae0;
+    color: #05668D;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+div.EmployeeProfiles h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 div.EmployeeProfiles p {
-  padding: 10px; /* Adds padding around the paragraph */
-  margin: 10px; /* Adds margin around the paragraph */
-  border-radius: 10px; /* Adds rounded corners to the paragraph box */
-  background-color: #e6ffe6; /* Light green for a fresh and natural look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-  font-size: 1.5em; /* Increases the font size of the text */
-  text-align: center; /* Centers the text inside the paragraph */
-  display: flex; /* Enables flexbox for alignment */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #e6ffe6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.EmployeeProfiles img {
-  width: 60%; /* Increases the width of the images */
-  height: auto; /* Sets a fixed height for the images */
-  border-radius: 50%; /* Keeps the images circular */
-  margin: 0 auto; /* Centers the images horizontally */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-  display: block; /* Ensures the images behave as block elements */
-  max-height: 400px; /* Sets a maximum height for the images */
-  max-width: 100%; /* Ensures the images are responsive and fit within their container */
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    max-height: 400px;
+    max-width: 100%;
 }
+
 div.ContactForm {
-  grid-column: 1; /* Places the contact form in the first column */
-  text-align: center; /* Centers the text inside the contact form box */
-  padding: 40px; /* Adds padding around the box */
-  background-color: #fefae0; /* Light blue for a calming and professional look */
-  color: #05668D; /* Darker text color for better contrast */
-  border-radius: 10px; /* Adds rounded corners to the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-  
+    grid-column: 1;
+    text-align: center;
+    padding: 40px;
+    background-color: #fefae0;
+    color: #05668D;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.Home {
+    position: relative;
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    height: auto;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+div.Home img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 0;
+    box-shadow: none;
+    z-index: -1;
+}
+
+div.Home h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--quinary-color);
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+    width: 80%;
+}
+
+div.Home p {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--quinary-color);
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+    width: 80%;
+}
+
+section.oppurtunities {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section.oppurtunities h2 {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.oppurtunities p {
+    grid-column: span 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section.oppurtunities img {
+    grid-column: span 2;
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+div.Favorite-Rapids {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+div.Favorite-Rapids h2 {
+    grid-column: span 4;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.Favorite-Rapids figure {
+    grid-column: span 2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.Favorite-Rapids button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: #66a42860;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 1;
+}
+
+div.Favorite-Rapids button:hover {
+    background-color: #66a428;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+div.Favorite-Rapids button:active {
+    background-color: #66a428;
+    transform: translateY(-50%) scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+div.Newsletter {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+div.CalltoAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: beige;
+}
+
+div.CalltoAction h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.CalltoAction p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.CalltoAction button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: var(--quinary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+div.CalltoAction button:hover {
+    background-color: var(--quaternary-color);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+div.CalltoAction button:active {
+    background-color: var(--quaternary-color);
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+section.Trips {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section.Trips h2 {
+    grid-column: span 4;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.Trips p {
+    grid-column: span 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+section.availabletrips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section.availabletrips table {
+    grid-column: span 2;
+    padding: 10px;
+}
+
+section.availabletrips h3 {
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section.availabletrips p {
+    grid-column: span 3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ffe4b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section.availabletrips a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.05em;
+}
+
+section.availabletrips a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
