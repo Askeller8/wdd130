@@ -216,3 +216,68 @@ footer {
   font-size: 1.2em; /* Increases the font size */
   font-weight: 400; /* Sets the font weight */
 }
+
+div.CompanyInfo {
+  grid-column: 1; /* Places the company info in the first column */
+  text-align: center; /* Centers the text inside the company info box */
+  padding: 20px; /* Adds padding around the box */
+  background-color: #fefae0; /* Light blue for a calming and professional look */
+  color: #05668D; /* Darker text color for better contrast */
+  border-radius: 10px; /* Adds rounded corners to the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+div.EmployeeProfiles {
+  display: grid; /* Enables grid layout for the employee profiles */
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-column: 2; /* Places the employee profiles in the second column */
+  text-align: center; /* Centers the text inside the employee profiles box */
+  padding: 20px; /* Adds padding around the box */
+  background-color: #fefae0; /* Light blue for a calming and professional look */
+  color: #05668D; /* Darker text color for better contrast */
+  border-radius: 10px; /* Adds rounded corners to the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+div.EmployeeProfiles h2 {
+  grid-column: span 2; /* Makes the heading span both columns */
+  text-align: center; /* Centers the heading text */
+  font-size: 1.5em; /* Increases the font size of the heading */
+  padding: 10px; /* Adds padding around the heading */
+  margin: 10px; /* Adds margin around the heading */
+  border-radius: 10px; /* Adds rounded corners to the heading box */
+  background-color: #f0f8ff; /* Light blue (AliceBlue) for a soft and clean look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+
+}
+div.EmployeeProfiles p {
+  padding: 10px; /* Adds padding around the paragraph */
+  margin: 10px; /* Adds margin around the paragraph */
+  border-radius: 10px; /* Adds rounded corners to the paragraph box */
+  background-color: #e6ffe6; /* Light green for a fresh and natural look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  font-size: 1.5em; /* Increases the font size of the text */
+  text-align: center; /* Centers the text inside the paragraph */
+  display: flex; /* Enables flexbox for alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;
+}
+
+div.EmployeeProfiles img {
+  width: 60%; /* Increases the width of the images */
+  height: auto; /* Sets a fixed height for the images */
+  border-radius: 50%; /* Keeps the images circular */
+  margin: 0 auto; /* Centers the images horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  display: block; /* Ensures the images behave as block elements */
+  max-height: 400px; /* Sets a maximum height for the images */
+  max-width: 100%; /* Ensures the images are responsive and fit within their container */
+}
+div.ContactForm {
+  grid-column: 1; /* Places the contact form in the first column */
+  text-align: center; /* Centers the text inside the contact form box */
+  padding: 40px; /* Adds padding around the box */
+  background-color: #fefae0; /* Light blue for a calming and professional look */
+  color: #05668D; /* Darker text color for better contrast */
+  border-radius: 10px; /* Adds rounded corners to the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  
+}
